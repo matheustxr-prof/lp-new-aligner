@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #04083a;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html, body{
+  overflow-x: hidden !important;
+}
+
+.headerSticky{
+  position: fixed;
+  top: 0;
+  background-color: #05093980;
+  backdrop-filter: blur(4px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.video{
+  box-shadow: 0px 0px 20px #00b1ff !important;
+}
+
+@media only screen and  (min-width: 1024px) {
+  .video{
+    max-width: 36rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0px 0px 20px #00b1ff !important;
+  }
+}
+
+
+/*SWIPER CONFIG
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color:#e70000 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #e70000 !important;
+}
+
+.hidding{
+  display: none;
+}
+
+/*TEXTO GRADIENTE*/
+.text-gradient {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#def9fa .89%,#8bebee 17.23%,#7de9ed 42.04%,#7de7eb 55.12%,#5ed2d6 71.54%,#0dd0ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*IMAGEM BACKGROUND*/
+.bg-img-dark{
+  background-image: url('/1.webp');
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-img-patriot{
+  background-image: url('/patriot.webp');
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/*setas navegação slider */
+@media (max-width:768px){
+  .slick-prev, .slick-next{
+    display: none !important;
+  }
+}
+
+.slick-dots li button:before{
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0dd0ee;
+  border-radius: 0;
+  box-shadow: 0px 0px 20px #ffffff !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
